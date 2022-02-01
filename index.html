@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercadinho Dois Irmãos</title>
+    <link rel="stylesheet" href="./estilos/style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 class="title">Mercadinho Dois Irmãos</h1>
+            <p>Rua das Adagas Voadoras, 555 - Good Garden - Fortaleza-CE</p>
+            <h2 class="caixa">Caixa</h2>
+            <div class="container">
+                <div class="campo">
+                    <label for="">Produto
+                        <select name="" id="produto_nome" onchange="selecionar_produto()">
+                            <option value=""></option>
+                            <option value="banana">Banana (Kg)</option> 
+                            <option value="maca">Macã (Kg)</option>
+                            <option value="laranja">Laranja (Kg)</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="campo">
+                    <label>Quantidade
+                        <input type="number" step="1" name="" id="produto_quant" min="1" onchange="definir_quant()">
+                    </label>
+                </div>
+            </div>
+            <div class="container">
+                <table class="container">
+                    <tr>
+                        <td rowspan="4" id="produto_imagem">
+                            <img src="./images/none.png" alt="" id="produto_imagem">
+                        </td>
+                        <td id="produto_nome_label"></td>
+                    </tr>
+                    <tr>
+                        <td id="produto_valor_unit_label"></td>
+                    </tr>
+                    <tr>
+                        <td id="produto_quant_label"></td>
+                    </tr>
+                    <tr>
+                        <td id="produto_valor_total_label"></td>
+                    </tr>
+                </table>
+            </div>
+            <button class="botao" id="add" onclick="adicionar_produto()">ADICIONAR PRODUTO</button>
+        </div>
+        <section class="container">
+            <table id="carrinho">
+                
+            </table>
+        </section>
+    </header>
+    <footer class="rodape">
+        <label for="">VALOR TOTAL</label>
+        R$<p class="total_geral" id="total_geral_valor">0</p>
+    </footer>
+    <script src="./javascript/index.js"></script>
+</body>
+</html>

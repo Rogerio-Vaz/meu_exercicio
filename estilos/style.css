@@ -1,0 +1,47 @@
+@charset "UTF-8";
+.header{
+    background-color: rgb(128, 0, 0);
+    text-align: center;
+    top: 0%;
+    color: khaki;
+    width: 100%;
+    height: 50%;
+    padding: 1%;
+}
+.title{
+    color: floralwhite;
+}
+.caixa{
+    color: goldenrod;
+}
+.campo{
+    margin: 1%;
+}
+.container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.rodape{
+    position: fixed;
+    bottom: 0%;
+    background-color: rgb(128, 0, 0);
+    text-align: center;
+    color: khaki;
+    width: 100%;
+    height: 10%;
+    padding-top: 1%;
+}
+.botao{
+    width: 100%;
+}
+.tabela{
+    
+}
+.total_geral{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 150%;
+}
+.carrinho.tr{
+    background-color: blue;
+}
